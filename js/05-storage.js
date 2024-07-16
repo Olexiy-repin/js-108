@@ -8,14 +8,32 @@
 ? - addItem(item) - отримує новий товар і додає його до поточних.
 ? - removeItem(item) - отримує товар і, якщо він є, видаляє його з поточних.
  */
+class Storage {
+  constructor(items) {
+    this.items = items;
+  }
 
-// const storage = new Storage(['🍎', '🍋', '🍇', '🍑']);
+  getItems() {
+    return this.items;
+  }
 
-// const items = storage.getItems();
-// console.table(items); // [ '🍎', '🍋', '🍇', '🍑' ]
+  addItem(item) {
+    this.items.push(item);
+  }
 
-// storage.addItem('🍌');
-// console.table(storage.items); // [ '🍎', '🍋', '🍇', '🍑', '🍌' ]
+  removeItem(item) {
+    this.items = this.items.filter(el => el !== item);
+  }
+}
 
-// storage.removeItem('🍋');
-// console.table(storage.items); // [ '🍎', '🍇', '🍑', '🍌' ]
+const storage = new Storage(['🍎', '🍋', '🍇', '🍑']);
+
+console.log(storage.getItems()); // [ '🍎', '🍋', '🍇', '🍑' ]
+
+storage.addItem('🍌');
+
+console.log(storage.getItems()); // [ '🍎', '🍋', '🍇', '🍑', '🍌' ]
+
+storage.removeItem('🍋');
+
+console.log(storage.getItems()); // [ '🍎', '🍇', '🍑', '🍌' ]
