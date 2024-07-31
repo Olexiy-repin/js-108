@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Practice: feedback form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/feedback.css" />
+  </head>
+  <body>
+    <p><a href="../index.html">Go back</a></p>
+
+    <div class="container">
+      <form class="feedback-form js-feedback-form">
+        <input name="user_name" type="text" class="feedback-form-input" placeholder="Введіть імʼя" />
+        <input
+          name="user_email"
+          type="email"
+          class="feedback-form-input js-feedback-email"
+          placeholder="Введіть email"
+        />
+        <textarea name="user_message" class="feedback-form-message" placeholder="Введіть повідомлення"></textarea>
+        <button class="feedback-form-submit">Відправити</button>
+      </form>
+    </div>
+
+    <script src="../js/03-feedback.js"></script>
+  </body>
+</html>
