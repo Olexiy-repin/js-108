@@ -1,0 +1,18 @@
+{
+  "name": "js-108",
+  "version": "1.0.0",
+  "description": "1. Розберемо:",
+  "main": "index.js",
+  "scripts": {
+    "autoprefixer": "npx postcss src/css/styles.css --use autoprefixer -d build/css/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
+    "postcss-cli": "^11.0.0"
+  },
+  "browserslist": "< 0.5%"
+}
