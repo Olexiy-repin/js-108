@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="../css/02-gallery.css" />
+  </head>
+
+  <body>
+    <p><a href="../index.html">Go back</a></p>
+
+    <section class="gallery-section">
+      <div class="container">
+        <form class="search-form js-search-form">
+          <input class="search-input js-search-input" type="text" name="user_query" required />
+          <button class="search-btn" type="submit">пошук</button>
+        </form>
+        <ul class="gallery js-gallery"></ul>
+        <span class="loader js-loader is-hidden"></span>
+      </div>
+    </section>
+
+    <script type="module" src="../js/02-gallery.js"></script>
+  </body>
+</html>
