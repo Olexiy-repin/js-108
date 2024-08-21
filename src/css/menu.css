@@ -1,0 +1,20 @@
+@import url('./common.css');
+
+.menu {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.menu-link {
+  display: block;
+  padding: 10px 20px;
+  border: 1px solid #000000;
+  transition: border-color 250ms linear, color 250ms linear;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: orange;
+  border-color: orange;
+}
