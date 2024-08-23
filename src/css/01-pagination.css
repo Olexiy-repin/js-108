@@ -1,0 +1,62 @@
+@import url('./common.css');
+
+.section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 16px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.posts-item {
+  flex-basis: calc((100% - 60px) / 3);
+  height: 340px;
+  padding: 20px;
+  box-shadow: 0 0 10px 0 #cccccc;
+  overflow-y: auto;
+}
+
+.posts-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.posts-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.load-more-btn {
+  display: block;
+  margin: 0 auto;
+  min-width: 200px;
+  padding: 14px 4px;
+  background-color: #34495e;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+}
+
+.load-more-btn:hover,
+.load-more-btn:focus {
+  background-color: #2c3e50;
+}
+
+.load-more-btn.is-hidden {
+  display: none;
+}
